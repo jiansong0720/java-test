@@ -1,0 +1,4 @@
+rootProject.name = 'java-test'
+include 'activiti'   //流程服务
+include 'weather'   //天气服务
+include 'wechat'     //微信服务

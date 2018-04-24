@@ -1,0 +1,26 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.24.250.174:3306/wechat?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF8&useSSL=false
+    username: song
+    password: Song0720!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+mail:
+  host: smtp.163.com
+  port: 25
+  userName: 18227624289@163.com
+  passWord: zhang0720
+  emailForm: 18227624289@163.com
+  personal: '简轩'
+
+weather:
+  weatherurl: https://free-api.heweather.com/s6/weather/forecast
+  username: HE1711221754351342
+  userkey: 0da811880471468a96131cc1b5ca326c

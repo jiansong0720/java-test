@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+  <process id="调休流程" isExecutable="true">
+    <startEvent id="开始"></startEvent>
+    <userTask id="部门审批" name="部门审批1" activiti:assignee="李政"></userTask>
+    <userTask id="总经办审批" name="总经办审批2" activiti:assignee="雅洁"></userTask>
+    <endEvent id="结束"></endEvent>
+    <sequenceFlow id="sequenceFlow-d3a0300c-246e-4fee-915c-324cb2f328dc" sourceRef="开始" targetRef="部门审批"></sequenceFlow>
+    <sequenceFlow id="sequenceFlow-bb2beb52-fdd3-4669-a67c-f3e3e5e236c3" sourceRef="部门审批" targetRef="总经办审批"></sequenceFlow>
+    <sequenceFlow id="sequenceFlow-84bbdbbf-0377-4922-a2a7-ef78f0471757" sourceRef="总经办审批" targetRef="结束"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_调休流程">
+    <bpmndi:BPMNPlane bpmnElement="调休流程" id="BPMNPlane_调休流程">
+      <bpmndi:BPMNShape bpmnElement="开始" id="BPMNShape_开始">
+        <omgdc:Bounds height="30.0" width="30.0" x="0.0" y="15.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="结束" id="BPMNShape_结束">
+        <omgdc:Bounds height="30.0" width="30.0" x="380.0" y="15.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="总经办审批" id="BPMNShape_总经办审批">
+        <omgdc:Bounds height="60.0" width="100.0" x="230.0" y="0.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="部门审批" id="BPMNShape_部门审批">
+        <omgdc:Bounds height="60.0" width="100.0" x="80.0" y="0.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sequenceFlow-bb2beb52-fdd3-4669-a67c-f3e3e5e236c3" id="BPMNEdge_sequenceFlow-bb2beb52-fdd3-4669-a67c-f3e3e5e236c3">
+        <omgdi:waypoint x="180.0" y="30.0"></omgdi:waypoint>
+        <omgdi:waypoint x="192.0" y="30.0"></omgdi:waypoint>
+        <omgdi:waypoint x="192.0" y="30.000000000000007"></omgdi:waypoint>
+        <omgdi:waypoint x="230.0" y="30.000000000000007"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sequenceFlow-84bbdbbf-0377-4922-a2a7-ef78f0471757" id="BPMNEdge_sequenceFlow-84bbdbbf-0377-4922-a2a7-ef78f0471757">
+        <omgdi:waypoint x="330.0" y="30.0"></omgdi:waypoint>
+        <omgdi:waypoint x="342.0" y="30.0"></omgdi:waypoint>
+        <omgdi:waypoint x="342.0" y="30.000000000000004"></omgdi:waypoint>
+        <omgdi:waypoint x="380.0" y="30.000000000000004"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sequenceFlow-d3a0300c-246e-4fee-915c-324cb2f328dc" id="BPMNEdge_sequenceFlow-d3a0300c-246e-4fee-915c-324cb2f328dc">
+        <omgdi:waypoint x="30.0" y="30.0"></omgdi:waypoint>
+        <omgdi:waypoint x="42.0" y="30.0"></omgdi:waypoint>
+        <omgdi:waypoint x="42.0" y="30.000000000000007"></omgdi:waypoint>
+        <omgdi:waypoint x="80.0" y="30.000000000000007"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

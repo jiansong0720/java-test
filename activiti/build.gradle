@@ -1,0 +1,32 @@
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.10.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    compile 'org.activiti:activiti-spring-boot-starter-basic:5.21.0'
+    //使用spring data jpa
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'mysql:mysql-connector-java:5.1.42'
+    compile 'com.alibaba:druid:1.1.1'
+
+    //bpmn
+    compile group: 'org.activiti', name: 'activiti-bpmn-layout', version: '5.21.0'
+//    compile group: 'org.codehaus.groovy', name: 'groovy', version: '2.6.0-alpha-2'
+
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    //swagger-ui相关
+    compile 'io.springfox:springfox-swagger2:2.8.0'
+    compile 'io.springfox:springfox-swagger-ui:2.8.0'
+
+    //lombok自动生成get和set
+    compile 'org.projectlombok:lombok:1.16.20'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
