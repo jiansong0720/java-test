@@ -1,0 +1,42 @@
+# maven文件
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+#gradle文件
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/out
+/captures
+gradle
+gradlew
+gradlew.bat
+
+# 编译文件
+*.class
+
+# 日志文件
+*.log
+
+# idea文件
+*.iml
+/.idea/
+/out/
+
+# 打包文件
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
